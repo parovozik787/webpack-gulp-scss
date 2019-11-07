@@ -1,0 +1,8 @@
+.idea
+package-lock.json
+/node_modules
+/dist
+/src/libs
+/src/video
+/src/pdf
+/src/hash
