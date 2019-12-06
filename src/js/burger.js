@@ -1,12 +1,10 @@
 function burger() {
-    document.querySelector('.header__nav-btn').addEventListener('click', function () {
-        this.classList.toggle('burger--active');
-        $('body').toggleClass('menu-open');
-        document.querySelector('.navbar').classList.toggle('navbar--active');
-        let arr = [...document.querySelectorAll('.navbar__item')];
-        for (let i = 0; i < arr.length; i++) {
-            arr[i].style.transitionDuration = "0." + i + "s";
-        }
-    });
-    document.querySelector('.navbar').addEventListener('touchmove', e => e.preventDefault());
+    const burger = document.querySelector('.burger');
+    const burgerLine = document.querySelector('.burger__line');
+    const navMenu = document.querySelector('.header__nav');
+    burger.addEventListener('click', function() {
+        burgerLine.classList.toggle('burger__line--active');
+        burger.classList.toggle('burger--active');
+        navMenu.classList.toggle('header__nav--active')
+    })
 }

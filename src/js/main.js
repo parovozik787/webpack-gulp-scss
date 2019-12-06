@@ -5,7 +5,6 @@ $(function() {
 
   // popup();
   // slick();
-  // burger();
-  // search();
-
+    burger();
+    search();
 });

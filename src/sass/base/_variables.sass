@@ -23,17 +23,23 @@ $font-main: 'Roboto', sans-serif
 $font-size: 14px
 
 // colors
-$color-main: #000000 // black
+$color-main: #FF9A0C // orange
+$color-main-text: #1E1E1E
+$color-border: #D6D6D6
+$color-bg: #EEF3F4
+$color-title: #5D636C
 
 // body
-$container: 1170px
+$container: 1175px
 
 // layout
-$header-height: 60px
-
+//\:root
+//  --footer-height: 751px
+//  @media #{$sm-min}
+//    --footer-height: 402px
+//  @media #{$mdx-min}
+//    --footer-height: 240px
 \:root
-  --footer-height: 751px
-  @media #{$sm-min}
-    --footer-height: 402px
-  @media #{$mdx-min}
-    --footer-height: 240px
+  --header-height: 74px
+  @media #{$sm}
+    --header-height: 58px

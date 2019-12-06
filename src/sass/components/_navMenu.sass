@@ -1,0 +1,49 @@
+.navMenu
+  width: 100%
+  display: flex
+  justify-content: space-between
+  background-color: $color-bg
+  border: 1px solid $color-border
+  &__item
+    color: $color-title
+    font-size: 17px
+    font-family: 'Gilroy'
+    line-height: 44px
+    position: relative
+    width: calc(100% - 1px)
+    text-align: center
+    &:not(:last-child):after
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      right: -1px
+      width: 1px
+      height: 14px
+      background-color: #9CA8AC
+    &:not(:first-child):before
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 0
+      width: 1px
+      height: 14px
+
+    &:hover
+      background-color: $color-main
+      color: #ffffff
+      &:after
+        background-color: #ffffff
+        right: 0
+      &:before
+        background-color: #ffffff
+    & a
+      display: block
+  &__share-block
+    margin-top: 40px
+    opacity: .7
+    & a:not(:last-child)
+      margin-right: 30px
+    @media #{$sm}
+      margin-top: 25px
