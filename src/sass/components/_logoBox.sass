@@ -1,26 +1,22 @@
 .logoBox
-  padding: 0 37px
+  padding-left: 37px
+  padding-right: 37px
   display: flex
   justify-content: space-between
   align-items: center
-  height: 74px
   position: relative
   @media #{$md}
-    padding: 0 24px
+    padding-left: 24px
+    padding-right: 24px
   @media #{$sm}
-    height: 58px
-    padding: 0 20px
+    padding-left: 20px
+    padding-right: 20px
   &__logo
     display: block
     width: auto
+    height: 100%
     & img
       width: auto
       height: 100%
-    @media #{$md}
-      position: fixed
-      top: 0
-      left: 50%
-      transform: translateX(-50%)
-    @media #{$sm}
-      height: 58px
+
 

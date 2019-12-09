@@ -16,9 +16,33 @@
       background-color: $color-main
       padding-top: 60px
       padding-bottom: 36px
+      z-index: 100
     &--active
       left: 0 !important
     &-item
+      &:not(:nth-last-child(3)):after
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: -1px
+        width: 1px
+        height: 14px
+        background-color: #9CA8AC
+      &:not(:first-child):before
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 0
+        width: 1px
+        height: 14px
+      &:hover
+        &:after
+          background-color: #ffffff
+          right: 0
+        &:before
+          background-color: #ffffff
       @media #{$md}
         color: $color-main-text
         text-align: left
@@ -29,12 +53,19 @@
           color: $color-main-text
         &:before, &:after
           display: none
-        &:last-child
-          font-size: 17px
-          color: #ffffff
-          font-family: 'Gilroy'
       @media #{$sm}
-        padding-left: 58px
+        padding-left: 68px
         line-height: 40px
-
+  &__logoBox
+    height: 74px
+    @media #{$sm}
+      height: 58px
+  &__logo
+    @media #{$md}
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
+    @media #{$sm}
+      height: 58px
 

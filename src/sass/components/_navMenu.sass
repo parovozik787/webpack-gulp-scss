@@ -12,24 +12,8 @@
     position: relative
     width: calc(100% - 1px)
     text-align: center
-    &:not(:last-child):after
-      content: ''
-      position: absolute
-      top: 50%
-      transform: translateY(-50%)
-      right: -1px
-      width: 1px
-      height: 14px
-      background-color: #9CA8AC
-    &:not(:first-child):before
-      content: ''
-      position: absolute
-      top: 50%
-      transform: translateY(-50%)
-      left: 0
-      width: 1px
-      height: 14px
-
+    @media #{$md}
+      width: 100%
     &:hover
       background-color: $color-main
       color: #ffffff
@@ -43,7 +27,17 @@
   &__share-block
     margin-top: 40px
     opacity: .7
+    display: none
     & a:not(:last-child)
       margin-right: 30px
+    @media #{$md}
+      display: block
     @media #{$sm}
       margin-top: 25px
+  &__link-mail
+    display: none
+    font-size: 17px
+    color: #ffffff !important
+    font-family: 'Gilroy'
+    @media #{$md}
+      display: block
