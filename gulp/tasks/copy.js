@@ -32,11 +32,11 @@ gulp.task('copy:img', function () {
     .pipe(gulp.dest(config.dest.img));
 });
 
-// gulp.task('copy:fonts', function () {
-//   return gulp
-//     .src(config.src.fonts + '/*.{ttf,eot,woff,woff2}')
-//     .pipe(gulp.dest(config.dest.fonts));
-// });
+gulp.task('copy:fonts', function () {
+  return gulp
+    .src(config.src.fonts + '/*.{ttf,eot,woff,woff2}')
+    .pipe(gulp.dest(config.dest.fonts));
+});
 
 gulp.task('copy:libs', function () {
   return gulp
@@ -52,7 +52,7 @@ gulp.task('copy:libs', function () {
 // });
 
 let build =  function(gulp) {
-  return gulp.series('copy:img', 'copy:libs');
+  return gulp.series('copy:img', 'copy:libs', 'copy:fonts');
 };
 
 let watch =  function(gulp) {

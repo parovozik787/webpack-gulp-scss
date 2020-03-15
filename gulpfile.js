@@ -45,4 +45,3 @@ gulp.task('watch', gulp.parallel('copy:watch', 'pug:watch', 'scss:watch', 'js:wa
 
 gulp.task('default', gulp.series(['build:dev', 'server', 'watch']));
 
-// NODE_ENV=production gulp build
