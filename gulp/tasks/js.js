@@ -19,7 +19,7 @@ gulp.task('js', function() {
     .pipe(gulpif(config.isDevelopment, sourcemaps.init()))
     .pipe(babel({presets: ['@babel/env']}))
     .pipe(uglify())
-    .pipe(concat('main.js'))
+    .pipe(concat('main.scss.js'))
     .pipe(gulpif(config.isDevelopment, sourcemaps.write()))
     .pipe(gulp.dest(config.dest.js));
 });

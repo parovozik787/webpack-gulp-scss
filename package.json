@@ -42,6 +42,9 @@
     "IE 10"
   ],
   "dependencies": {
-    "bower": "^1.8.8"
+    "bower": "^1.8.8",
+    "chart.js": "^2.9.3",
+    "sass-convert": "^0.5.2",
+    "sass2scss": "^1.0.1"
   }
 }

@@ -14,10 +14,10 @@ let config = {
   src: {
     root: 'src',
     // pug: ['./src/pug/*.pug', './src/pug/**/*.pug'],
-    // sass: ['./src/sass/*.{scss,sass}', './src/sass/**/*.{scss,sass}'],
+    // scss: ['./src/scss/*.{scss,scss}', './src/scss/**/*.{scss,scss}'],
     // js: ['./src/js/*.js', './src/js/**/*.js'],
     pug: 'src/pug',
-    sass: 'src/sass',
+    sass: 'src/scss',
     js: 'src/js',
     img: 'src/img',
     fonts: 'src/fonts',

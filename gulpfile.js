@@ -22,7 +22,7 @@ gulp.task('server', getTaskBuild('server'));
 // watch tasks
 gulp.task('copy:watch', getTaskWatch('copy'));
 gulp.task('pug:watch', getTaskWatch('pug'));
-gulp.task('sass:watch', getTaskWatch('sass'));
+gulp.task('scss:watch', getTaskWatch('sass'));
 gulp.task('js:watch', getTaskWatch('js'));
 
 function setmodeProd(done) {
@@ -41,7 +41,7 @@ gulp.task('build', gulp.series(setmodeProd, 'clean', 'pug', 'sass', 'js', 'copy'
 
 gulp.task('build:dev', gulp.series(setmodeDev, 'clean', 'pug', 'sass', 'js', 'copy'));
 
-gulp.task('watch', gulp.parallel('copy:watch', 'pug:watch', 'sass:watch', 'js:watch'));
+gulp.task('watch', gulp.parallel('copy:watch', 'pug:watch', 'scss:watch', 'js:watch'));
 
 gulp.task('default', gulp.series(['build:dev', 'server', 'watch']));
 

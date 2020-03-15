@@ -19,7 +19,7 @@ gulp.task('server', function(done) {
       //config.src.root + '/**/*.*',
       config.dest.html + '/*.html',
       config.dest.css + '/*.css',
-      //config.src.sass + '/**/*.{sass,scss}',
+      //config.src.scss + '/**/*.{scss,scss}',
       config.dest.js + '/*.js',
       config.dest.img + '/**/*'
     ],

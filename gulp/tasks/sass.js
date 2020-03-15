@@ -28,7 +28,7 @@ let plugins = [
 
 gulp.task('sass', function() {
   return gulp
-    .src(config.src.sass + '/*.{sass,scss}')
+    .src(config.src.sass + '/*.{scss,scss}')
     //.pipe(plumber())
     .pipe(plumber(function (error) {
       util.log(error.message);
@@ -76,7 +76,7 @@ let build =  function(gulp) {
 
 let watch =  function(gulp) {
   return function() {
-    gulp.watch(config.src.sass + '/**/*.{sass,scss}', gulp.series('sass'));
+    gulp.watch(config.src.sass + '/**/*.{scss,scss}', gulp.series('sass'));
   }
 };
 
