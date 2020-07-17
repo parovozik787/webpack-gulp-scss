@@ -10,7 +10,7 @@
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.0",
     "autoprefixer": "^9.7.6",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.10",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
