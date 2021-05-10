@@ -43,7 +43,7 @@
   ],
   "dependencies": {
     "bower": "^1.8.8",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "sass-convert": "^0.5.2",
     "sass2scss": "^1.0.1"
   }
